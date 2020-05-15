@@ -1,0 +1,31 @@
+package monticulo;
+
+public class Elemento {
+	private String nombre;
+	private int prioridad;
+	
+	public Elemento() {
+		this.nombre = "";
+		this.prioridad = 0;
+	}
+	
+	public Elemento(String nombre, int numero) {
+		this.nombre = nombre;
+		this.prioridad = numero;
+	}
+	public String getNombre() {
+		return nombre;
+	}
+	public void setNombre(String nombre) {
+		this.nombre = nombre;
+	}
+	public int getPrioridad() {
+		return prioridad;
+	}
+	public void setNumero(int numero) {
+		this.prioridad = numero;
+	}
+	
+	
+	
+}

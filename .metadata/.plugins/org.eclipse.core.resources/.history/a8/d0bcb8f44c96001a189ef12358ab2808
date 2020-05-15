@@ -1,0 +1,90 @@
+package monticulo;
+
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+
+public class Monticulo {
+	ArrayList<Elemento> monticulo;
+
+	public Monticulo() {
+		this.monticulo = new ArrayList<Elemento>();
+		// this.monticulo.add(new Elemento());
+		this.monticulo.add(null);
+	}
+
+	public Monticulo(ArrayList<Elemento> monticulo) {
+		this.monticulo = monticulo;
+	}
+
+	public Elemento sacarUnElemento() {
+			ArrayList<Elemento> array = this.getMonticulo();
+			Elemento resultado;
+			
+			if(array.size() == 1) {
+				 resultado = null;
+				 
+			}else {
+				if(array.size() == 2) {
+					resultado = array.get(1).clone();
+					array.remove(1);
+					
+				}
+				else {
+					resultado = array.get(1).clone();
+					
+					array.set(1, array.get(array.size()-1));
+					array.remove(array.size()-1);
+					
+					int indexActual = 1;
+					int indexHI = indexActual*2 >= array.size()-1 ? -1 : indexActual*2;
+					int indexHD = indexActual*2 + 1 >= array.size()-1 ? -1 :indexActual*2 + 1;
+					
+					int intercambiar=0;
+					
+					while(indexHI!=-1) {
+						if(indexHD != -1) {
+							if( (intercambiar = array.get(indexHI).compareTo(array.get(indexHD)))<0 ) {
+								if(array.get(indexActual).compareTo(array.get(indexHD))<0) {
+									array.get(indexActual).intercambiar(array.get(indexHD));
+									indexActual = indexHD;
+								}
+							}
+							else {
+								if(intercambiar > 0) {
+									if(array.get(indexActual).compareTo(array.get(indexHI))<0) {
+										array.get(indexActual).intercambiar(array.get(indexHI));
+										indexActual = indexHI;
+									}
+										                    
+								}
+								
+							}
+						}
+						else {
+							if(array.get(indexActual).compareTo(array.get(indexHI))<0) {
+								array.get(indexActual).intercambiar(array.get(indexHI));
+								indexActual = indexHI;
+							}	
+						}
+						
+						indexHI = indexActual*2 >= array.size()-1 ? -1 : indexActual*2;
+						indexHD = indexActual*2 + 1 >= array.size()-1 ? -1 :indexActual*2 + 1;
+					
+					}//FIN WHILE
+				}//FIN DE ELSE INTERNO
+			}//FIN ELSE MAYOR
+		return resultado;	
+		}
+
+	
+	
+	
+	public ArrayList<Elemento> getMonticulo() {
+		return monticulo;
+	}
+
+	public void setMonticulo(ArrayList<Elemento> monticulo) {
+		this.monticulo = monticulo;
+	}
+
+}

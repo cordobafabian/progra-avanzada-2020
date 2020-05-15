@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename field &apos;estadoConsistencia&apos; in &apos;Lanzador&apos; to &apos;estado&apos;&#x0D;&#x0A;- Original project: &apos;LanzandoElCaber&apos;&#x0D;&#x0A;- Original element: &apos;Lanzador.estadoConsistencia&apos;&#x0D;&#x0A;- Renamed element: &apos;Lanzador.estado&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" delegate="false" deprecate="false" description="Rename field &apos;estadoConsistencia&apos;" flags="589826" getter="false" id="org.eclipse.jdt.ui.rename.field" input="/src&lt;{Lanzador.java[Lanzador^estadoConsistencia" name="estado" references="true" setter="false" stamp="1588153775617" textual="false" version="1.0"/>
+</session>

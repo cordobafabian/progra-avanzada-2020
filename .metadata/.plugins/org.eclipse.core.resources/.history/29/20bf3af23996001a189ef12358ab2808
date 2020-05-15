@@ -1,0 +1,28 @@
+package monticulo;
+
+import java.util.ArrayList;
+
+public class Monticulo {
+		ArrayList<Elemento> monticulo;
+		
+		public Monticulo() {
+			this.monticulo = new ArrayList<Elemento>();
+		}
+		
+
+		public Monticulo(ArrayList<Elemento> monticulo) {
+			this.monticulo = monticulo;
+		}
+
+		public ArrayList<Elemento> getMonticulo() {
+			return monticulo;
+		}
+
+		public void setMonticulo(ArrayList<Elemento> monticulo) {
+			this.monticulo = monticulo;
+		}
+		
+		
+		
+	
+}

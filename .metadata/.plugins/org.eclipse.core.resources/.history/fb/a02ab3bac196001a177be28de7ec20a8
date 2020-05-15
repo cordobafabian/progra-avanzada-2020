@@ -1,0 +1,28 @@
+package monticuloPruebas;
+
+import static org.junit.Assert.*;
+
+import java.util.ArrayList;
+
+import org.junit.Test;
+
+import monticulo.*;
+
+public class monticuloTest {
+
+	@Test
+	public void test() {
+		
+		Monticulo monti = new Monticulo();
+		
+		ArrayList<Elemento> esperados = new ArrayList<Elemento>();
+		esperados.add(new Elemento());
+		//esperados.add(new Elemento());
+		
+		int esperado = esperados.size();
+		int real = monti.getElementos().size();
+		
+		assertEquals(esperado, real);		
+	}
+
+}
