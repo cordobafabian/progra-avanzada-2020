@@ -1,7 +1,0 @@
-package monticulo;
-
-public class Monticulo {
-		private int prioridad;
-		private Elemento elemento;
-	
-}

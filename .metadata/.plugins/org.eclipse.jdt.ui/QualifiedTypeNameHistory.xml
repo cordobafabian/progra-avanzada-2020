@@ -17,7 +17,6 @@
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="SecMax"/>
 <fullyQualifiedTypeName name="java.util.List"/>
-<fullyQualifiedTypeName name="java.awt.List"/>
 <fullyQualifiedTypeName name="ProcesarStrings"/>
 <fullyQualifiedTypeName name="junit.framework.Assert"/>
 <fullyQualifiedTypeName name="org.junit.Assert"/>
@@ -26,12 +25,17 @@
 <fullyQualifiedTypeName name="java.io.BufferedWriter"/>
 <fullyQualifiedTypeName name="java.io.IOException"/>
 <fullyQualifiedTypeName name="java.util.LinkedHashMap"/>
-<fullyQualifiedTypeName name="java.util.HashMap"/>
 <fullyQualifiedTypeName name="java.util.SortedMap"/>
 <fullyQualifiedTypeName name="java.lang.Comparable"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="monticulo.Elemento"/>
 <fullyQualifiedTypeName name="monticulo.Monticulo"/>
 <fullyQualifiedTypeName name="colaDePrioridad.ColaDePrioridad"/>
+<fullyQualifiedTypeName name="source.Action"/>
+<fullyQualifiedTypeName name="java.util.Map"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+<fullyQualifiedTypeName name="java.awt.List"/>
+<fullyQualifiedTypeName name="org.junit.Before"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="metodosDeOrdenamiento.MetodosDeOrdenamiento"/>
 </qualifiedTypeNameHistroy>

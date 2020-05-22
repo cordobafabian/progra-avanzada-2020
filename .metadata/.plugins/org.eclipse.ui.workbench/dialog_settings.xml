@@ -6,6 +6,7 @@
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
+			<item value="com.objectaid.uml.new"/>
 		</list>
 	</section>
 </section>

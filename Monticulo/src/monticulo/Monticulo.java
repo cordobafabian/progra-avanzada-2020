@@ -2,7 +2,7 @@ package monticulo;
 import java.util.ArrayList;
 
 public class Monticulo {
-	ArrayList<Elemento> elementos;
+	private ArrayList<Elemento> elementos;
 
 	public Monticulo() {
 		this.elementos = new ArrayList<Elemento>();

@@ -4,7 +4,7 @@ import monticulo.*;
 
 public class ColaDePrioridad {
 	
-	Monticulo monticulo;
+	private Monticulo monticulo;
 	
 	public ColaDePrioridad() {
 		this.monticulo = new Monticulo();
