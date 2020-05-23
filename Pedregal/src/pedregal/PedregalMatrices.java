@@ -76,8 +76,8 @@ public class PedregalMatrices {
 
 	public static String BuscarUbicacionParaCasa(int[][] matrizDinamica, Casa casa) {
 		String respuesta = "NO";
-		int largo = 4;// casa.getLargo();
-		int ancho =2;// casa.getAncho();
+		int largo = 6;//casa.getLargo();
+		int ancho = 2;// casa.getAncho();
 
 		boolean posicionada = false;
 		int i;
@@ -98,17 +98,17 @@ public class PedregalMatrices {
 				// Verifica si puede poner puerta
 
 				if (cantidadDePiedras == 0) {
-					int i_desde = i;
-					int i_hasta = i2;
-					int j_desde = j - 1;
-					int j_hasta = j - 1;
+					int i_desde;
+					int i_hasta;
+					int j_desde;
+					int j_hasta;
 
 					if (largo > ancho) {
 						
-						i_desde = i2 + 1;
-						i_hasta = i2 + 1;
-						j_desde = j;
-						j_hasta = j2;
+						i_desde = i;
+						i_hasta = i2;
+						j_desde = j - 1 ;
+						j_hasta = j - 1;
 						
 						cantidadDePiedras = matrizDinamica[i_hasta][j_hasta] - matrizDinamica[i_desde - 1][j_hasta]
 								- matrizDinamica[i_hasta][j_desde - 1] + matrizDinamica[i_desde - 1][j_desde - 1];
@@ -132,45 +132,51 @@ public class PedregalMatrices {
 							}
 						}
 					} else {
+						
+						i_desde = i-1;
+						i_hasta = i - 1;
+						j_desde = j;
+						j_hasta = j2;
+						
 						cantidadDePiedras = matrizDinamica[i_hasta][j_hasta] - matrizDinamica[i_desde - 1][j_hasta]
 								- matrizDinamica[i_hasta][j_desde - 1] + matrizDinamica[i_desde - 1][j_desde - 1];
 
 						if (cantidadDePiedras < largo) {
-							respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nO";
+							respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nS";
 							posicionada = true;
 						} else {
 							
-							i_desde = i;
+							i_desde = i2 + 1;
 							i_hasta = i2 + 1;
-							j_desde = i2;
-							j_hasta = j - 1;
+							j_desde = j;
+							j_hasta = j2;
 							
 							cantidadDePiedras = matrizDinamica[i_hasta][j_hasta] - matrizDinamica[i_desde - 1][j_hasta]
 									- matrizDinamica[i_hasta][j_desde - 1] + matrizDinamica[i_desde - 1][j_desde - 1];
 
 							if (cantidadDePiedras < largo) {
-								respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nE";
+								respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nN";
 								posicionada = true;
 							} else {
 								
-								i_desde = i - 1;
-								i_hasta = i - 1;
-								j_desde = j;
-								j_hasta = j2;
+								i_desde = i;
+								i_hasta = i2;
+								j_desde = j-1;
+								j_hasta = j-1;
 								
 								cantidadDePiedras = matrizDinamica[i_hasta][j_hasta]
 										- matrizDinamica[i_desde - 1][j_hasta] - matrizDinamica[i_hasta][j_desde - 1]
 										+ matrizDinamica[i_desde - 1][j_desde - 1];
 
 								if (cantidadDePiedras < largo) {
-									respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nS";
+									respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nO";
 									posicionada = true;
 								} else {
 									
-									i_desde = i2 + 1;
-									i_hasta = i2 + 1;
-									j_desde = j;
-									j_hasta = j2;
+									i_desde = i;
+									i_hasta = i2;
+									j_desde = j2+1;
+									j_hasta = j2+1;
 									
 									cantidadDePiedras = matrizDinamica[i_hasta][j_hasta]
 											- matrizDinamica[i_desde - 1][j_hasta]
@@ -178,7 +184,7 @@ public class PedregalMatrices {
 											+ matrizDinamica[i_desde - 1][j_desde - 1];
 
 									if (cantidadDePiedras < largo) {
-										respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nN";
+										respuesta = "SI\n" + "\nFila: " + i + " Columna: " + j + "\nVertical" + "\nE";
 										posicionada = true;
 									}
 								}
