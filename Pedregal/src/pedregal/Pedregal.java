@@ -18,6 +18,9 @@ public class Pedregal {
 		
 		Matriz.mostrarMatrizInvertidaVerticalmente(terreno);
 		System.out.println();
+		Matriz.mostrarMatrizInvertidaVerticalmente(matrizDinamica);
+		System.out.println();
+		
 		System.out.println(casa.toString());
 		
 		String respuesta = PedregalMatrices.BuscarUbicacionParaCasa(matrizDinamica, casa);
