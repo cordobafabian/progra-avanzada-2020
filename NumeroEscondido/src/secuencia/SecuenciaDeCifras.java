@@ -33,6 +33,7 @@ public class SecuenciaDeCifras {
 		
 		for(Integer cifra : this.cifras) {
 			if(lista.contains(cifra)) {
+				
 				lista.remove(cifra);
 			}
 		}
@@ -57,6 +58,7 @@ public class SecuenciaDeCifras {
 
 			for (int i = indexInicio; i <= indexInicio + longitud - 1; i++) {
 				array.add(this.getIndex(i));
+				
 			}
 
 			nuevaSecuencia = new SecuenciaDeCifras(array);
