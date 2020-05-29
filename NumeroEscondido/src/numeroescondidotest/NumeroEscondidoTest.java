@@ -23,7 +23,7 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
 		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\catedra.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
@@ -37,10 +37,11 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
 		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\cifrasBuscadasEnDiferentesOrdenes.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
 		assertEquals(expected, actual);
 	}
 	
@@ -51,10 +52,27 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
 		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\mismasCifras.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
+		assertEquals(expected, actual);
+	}
+	
+	@Test
+	public void posicionesCompartidas() throws IOException {
+		pathArchivoIn = "..\\Pruebas NumeroEscondido\\Entradas\\posicionesCompartidas.in";
+		expected = "SI 4\n1 2 3 4";
+		mayor = new SecuenciaDeCifras();
+		menor = new SecuenciaDeCifras();
+		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
+		
+		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\posicionesCompartidas.out";
+		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
 		assertEquals(expected, actual);
 	}
 	
@@ -65,10 +83,11 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
 		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\todasLasPosiciones.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
 		assertEquals(expected, actual);
 	}
 
@@ -79,10 +98,11 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
-		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\entrada.out";
+		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\salida.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
 		assertEquals(expected, actual);
 	}
 
@@ -93,10 +113,11 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
-		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\entrada2.out";
+		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\salida2.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
 		assertEquals(expected, actual);
 	}
 
@@ -107,10 +128,11 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
-		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\entrada3.out";
+		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\salida3.out";
 		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		
 		assertEquals(expected, actual);
 	}
 	
@@ -121,10 +143,13 @@ public class NumeroEscondidoTest {
 		mayor = new SecuenciaDeCifras();
 		menor = new SecuenciaDeCifras();
 		LectorDeArchivo.leerArchivo(pathArchivoIn, mayor, menor);
-		actual = mayor.contieneSubsecuenciaToString(menor);
+		actual = mayor.contieneSubsecuenciaInfoString(menor);
 		
-		pathArchivoOut = "..\\Pruebas NumeroEscondido\\Salidas\\entrada4.out";
-		EscritorDeArchivo.escribirArchivo(pathArchivoOut, actual);
+		//Falla, arroja una LongitudesNocoincidentesException
+		//Creamos este tipo de Exception para cuando
+		//alguna de las longitudes 
+		//informadas no oincidan con las longitudes de las secuencias de cifras
+		
 		assertEquals(expected, actual);
 	}
 

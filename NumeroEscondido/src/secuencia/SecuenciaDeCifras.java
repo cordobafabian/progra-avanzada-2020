@@ -7,15 +7,15 @@ import java.util.List;
 public class SecuenciaDeCifras {
 
 	private List<Integer> cifras;
-	
+
 	public SecuenciaDeCifras() {
 		this.cifras = new ArrayList<Integer>();
 	}
-	
+
 	public SecuenciaDeCifras(List<Integer> lista) {
 		this.cifras = lista;
 	}
-	
+
 	public List<Integer> getCifras() {
 		return cifras;
 	}
@@ -24,21 +24,21 @@ public class SecuenciaDeCifras {
 		this.cifras = lista;
 	}
 
-	public boolean tieneMismasCifras(SecuenciaDeCifras other) {
+	private boolean tieneMismasCifras(SecuenciaDeCifras other) {
 		List<Integer> lista = new LinkedList<Integer>();
-		
-		for(Integer cifra : other.getCifras()) {
+
+		for (Integer cifra : other.getCifras()) {
 			lista.add(cifra);
 		}
-		
-		for(Integer cifra : this.cifras) {
-			if(lista.contains(cifra)) {
-				
+
+		for (Integer cifra : this.cifras) {
+			if (lista.contains(cifra)) {
+
 				lista.remove(cifra);
 			}
 		}
-		
-		return this.size()>0 && other.size()>0 && lista.size()==0;
+
+		return this.size() > 0 && other.size() > 0 && lista.size() == 0;
 	}
 
 	public int size() {
@@ -49,7 +49,7 @@ public class SecuenciaDeCifras {
 		return this.cifras.get(index);
 	}
 
-	public SecuenciaDeCifras generarSubsecuencia(int indexInicio, int longitud) {
+	private SecuenciaDeCifras generarSubsecuencia(int indexInicio, int longitud) {
 
 		SecuenciaDeCifras nuevaSecuencia = null;
 
@@ -58,7 +58,7 @@ public class SecuenciaDeCifras {
 
 			for (int i = indexInicio; i <= indexInicio + longitud - 1; i++) {
 				array.add(this.getIndex(i));
-				
+
 			}
 
 			nuevaSecuencia = new SecuenciaDeCifras(array);
@@ -67,40 +67,34 @@ public class SecuenciaDeCifras {
 		return nuevaSecuencia;
 	}
 
-	public List<Integer> posicionesConSubsecuencia(SecuenciaDeCifras subsecuencia){
+	private List<Integer> posicionesConSubsecuencia(SecuenciaDeCifras subsecuencia) {
 		List<Integer> posiciones = new ArrayList<Integer>(this.size());
 		int longitudSubsecuencia = subsecuencia.size();
-		
-		for(int i=0; i <= this.size() - longitudSubsecuencia; i++) {
-			
-			SecuenciaDeCifras particion = this.generarSubsecuencia( i, longitudSubsecuencia);
-			
-			if(particion.tieneMismasCifras(subsecuencia)) {
-				posiciones.add(i+1);
+
+		for (int i = 0; i <= this.size() - longitudSubsecuencia; i++) {
+
+			SecuenciaDeCifras particion = this.generarSubsecuencia(i, longitudSubsecuencia);
+
+			if (particion.tieneMismasCifras(subsecuencia)) {
+				posiciones.add(i + 1);
 			}
 		}
-		
+
 		return posiciones;
 	}
 	
-	public boolean contieneSubsecuencia(SecuenciaDeCifras subsecuencia, List<Integer> posiciones) {
-		posiciones = this.posicionesConSubsecuencia(subsecuencia);
-		return posiciones.size()!=0;
-	}
-
-	public String contieneSubsecuenciaToString(SecuenciaDeCifras subsecuencia) {
+	public String contieneSubsecuenciaInfoString(SecuenciaDeCifras subsecuencia) {
 		String respuesta = "NO";
 		List<Integer> posiciones = this.posicionesConSubsecuencia(subsecuencia);
-		if(posiciones.size()!=0){
-			respuesta = "SI "+posiciones.size()+"\n";
-			
-			for(Integer posicion : posiciones) {
+		if (posiciones.size() != 0) {
+			respuesta = "SI " + posiciones.size() + "\n";
+
+			for (Integer posicion : posiciones) {
 				respuesta += posicion.toString() + " ";
 			}
 		}
-		
-	return respuesta.trim();
-	}
 
+		return respuesta.trim();
+	}
 
 }

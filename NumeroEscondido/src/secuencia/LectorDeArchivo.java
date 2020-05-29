@@ -16,15 +16,25 @@ public class LectorDeArchivo {
 			
 			int longitudMayor = lector.nextInt();
 			String cadena1 =lector.next().trim();
-			mayor.setCifras(stringToArrayList(cadena1));
+			if(longitudMayor!= cadena1.length()) {
+				throw new LongitudesNoCoincidentesException();
+			}
+			
+			mayor.setCifras(stringToIntegerList(cadena1));
 			
 			int longitudMenor = lector.nextInt();
 			String cadena2 = lector.next().trim();
-			menor.setCifras(stringToArrayList(cadena2));
+			if(longitudMenor!= cadena2.length()) {
+				throw new LongitudesNoCoincidentesException();
+			}
+			
+			menor.setCifras(stringToIntegerList(cadena2));
 			
 		} catch (FileNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
+		} catch (LongitudesNoCoincidentesException e) {
+			System.out.println(e.getMessage());
 		} finally {
 			if (lector != null) {
 				lector.close();
@@ -33,7 +43,7 @@ public class LectorDeArchivo {
 
 	}
 	
-	public static List<Integer> stringToArrayList(String cadena){
+	private static List<Integer> stringToIntegerList(String cadena){
 		char[] vectorDeChar = cadena.toCharArray();
 
 		List<Integer> cifras = new ArrayList<Integer>(vectorDeChar.length);

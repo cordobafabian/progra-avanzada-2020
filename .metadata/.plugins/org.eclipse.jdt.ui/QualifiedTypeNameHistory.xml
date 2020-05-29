@@ -44,8 +44,6 @@
 <fullyQualifiedTypeName name="java.io.FileNotFoundException"/>
 <fullyQualifiedTypeName name="corredores.Carrera"/>
 <fullyQualifiedTypeName name="corredores.Corredor"/>
-<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
-<fullyQualifiedTypeName name="java.io.FileWriter"/>
 <fullyQualifiedTypeName name="banderas.Carretel"/>
 <fullyQualifiedTypeName name="banderas.Ronda"/>
 <fullyQualifiedTypeName name="banderas.CompetenciaBanderas"/>
@@ -56,4 +54,9 @@
 <fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="secuencia.SecuenciaDeCifras"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="secuencia.EscritorDeArchivo"/>
+<fullyQualifiedTypeName name="java.lang.Exception"/>
+<fullyQualifiedTypeName name="secuencia.LongitudesNoCoincidentesException"/>
 </qualifiedTypeNameHistroy>
