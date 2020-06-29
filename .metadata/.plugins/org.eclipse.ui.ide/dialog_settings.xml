@@ -6,6 +6,14 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Noblex\Desktop\eclipse\VisualizadorDeOrdenamientos"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\EclipsadosSortGraphics"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\Chateanding"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\chatchat"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\chat"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\chat hackeado"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\yet-another-chat-chat"/>
+			<item value="C:\Users\Noblex\Desktop\Repositorios\workspace-taller\swing-basico"/>
 			<item value="C:\Users\Noblex\Desktop\Repositorios\workspace-taller\graphics"/>
 			<item value="C:\Users\Noblex\Desktop\Lanzando el Caber, parte 2 - Zeta\LanzandoElCaber"/>
 			<item value="C:\Users\Noblex\Desktop\Repositorios\zeta\Lanzando el Caber, parte 2 - Zeta\LanzandoElCaber"/>
@@ -13,6 +21,12 @@
 			<item value="C:\Users\Noblex\Desktop\zork mio"/>
 			<item value="C:\Users\Noblex\Desktop\Repositorios\eclipsados"/>
 			<item value="C:\Users\Noblex\Desktop\eclipse\eclipsados"/>
+		</list>
+	</section>
+	<section name="NewWizardAction">
+		<item key="NewWizardSelectionPage.STORE_SELECTED_ID" value="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+		<list key="NewWizardSelectionPage.STORE_EXPANDED_CATEGORIES_ID">
+			<item value="org.eclipse.jdt.ui.java"/>
 		</list>
 	</section>
 </section>

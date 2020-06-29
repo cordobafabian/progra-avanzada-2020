@@ -1,0 +1,20 @@
+Algoritmo;Orden;Tamaño;Tiempo;Estado
+Burbujeo;Aleatorio;202;3.5682;Cancelado
+Burbujeo;Aleatorio;202;2.4630;Ordenado
+Inserción;Aleatorio;202;0.4349;Ordenado
+Inserción;Invertido;296;1.4577;Ordenado
+Inserción;Invertido;202;8.1837;Cancelado
+Inserción;Invertido;202;7.1733;Cancelado
+Inserción;Invertido;202;14.5334;Cancelado
+Inserción;Invertido;202;0.3081;Ordenado
+Shell Sort;Invertido;202;0.0218;Ordenado
+Shell Sort;Invertido;89;11.9552;Cancelado
+Quick Sort;Invertido;89;7.8192;Cancelado
+Quick Sort;Aleatorio;89;7.9041;Cancelado
+Quick Sort;Aleatorio;89;11.6284;Cancelado
+Quick Sort;Invertido;89;41.6024;Cancelado
+Quick Sort;Aleatorio;89;38.5703;Ordenado
+Burbujeo;Aleatorio;99;13.6835;Ordenado
+Burbujeo;Aleatorio;99;7.1746;Ordenado
+Burbujeo;Aleatorio;99;2.6993;Cancelado
+Burbujeo;Aleatorio;99;4.1818;Ordenado

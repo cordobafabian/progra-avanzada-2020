@@ -5,29 +5,33 @@
 		<item key="DIALOG_Y_ORIGIN" value="247"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value=""/>
+		<item key="selection" value="Inventor"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="estado"/>
-			<item value="loop"/>
-			<item value="game.processAction(action)"/>
-			<item value="traducido"/>
-			<item value="encontrado"/>
-			<item value="comando"/>
-			<item value="Index"/>
-			<item value="index"/>
-			<item value="feo"/>
-			<item value="horror"/>
-			<item value="miedo"/>
-			<item value="dado cuenta"/>
+			<item value="inventor"/>
+			<item value="describ"/>
+			<item value="descri "/>
+			<item value="hermanastra"/>
+			<item value="could"/>
+			<item value="puerta"/>
+			<item value="use"/>
+			<item value="cruz"/>
+			<item value="porton"/>
+			<item value="veneno de cobra"/>
+			<item value="npc"/>
+			<item value="cuchillo"/>
+			<item value="obstacle"/>
 			<item value="espejo"/>
-			<item value="println"/>
+			<item value="veneno"/>
 		</list>
 		<list key="replacehistory">
+			<item value=""/>
+			<item value="obstacles"/>
+			<item value="barras.getCantidadDeElementos()"/>
 			<item value="game.processCommand(command)"/>
 			<item value="translated"/>
 			<item value="found"/>
@@ -35,8 +39,8 @@
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="943"/>
-		<item key="DIALOG_Y_ORIGIN" value="238"/>
+		<item key="DIALOG_X_ORIGIN" value="969"/>
+		<item key="DIALOG_Y_ORIGIN" value="51"/>
 		<item key="DIALOG_WIDTH" value="284"/>
 		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
