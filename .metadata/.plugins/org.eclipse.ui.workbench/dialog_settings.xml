@@ -6,7 +6,6 @@
 			<item value="org.eclipse.ui.Basic"/>
 			<item value="org.eclipse.jdt.ui.java"/>
 			<item value="org.eclipse.jdt.ui.java/org.eclipse.jdt.junit"/>
-			<item value="com.objectaid.uml.new"/>
 		</list>
 	</section>
 	<section name="ImportExportAction">
@@ -14,5 +13,7 @@
 		<list key="ImportExportPage.STORE_EXPANDED_EXPORT_CATEGORIES">
 			<item value="org.eclipse.jdt.ui.Java"/>
 		</list>
+	</section>
+	<section name="EditorSelectionDialog">
 	</section>
 </section>

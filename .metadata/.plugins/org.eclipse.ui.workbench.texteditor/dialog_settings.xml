@@ -5,30 +5,35 @@
 		<item key="DIALOG_Y_ORIGIN" value="247"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="Inventor"/>
+		<item key="selection" value="jajaja madito forastero hagas lo que digas me mantendre firme en mi decision"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="inventor"/>
-			<item value="describ"/>
-			<item value="descri "/>
-			<item value="hermanastra"/>
-			<item value="could"/>
-			<item value="puerta"/>
-			<item value="use"/>
-			<item value="cruz"/>
-			<item value="porton"/>
-			<item value="veneno de cobra"/>
-			<item value="npc"/>
-			<item value="cuchillo"/>
-			<item value="obstacle"/>
-			<item value="espejo"/>
-			<item value="veneno"/>
+			<item value="jajaja madito forastero hagas lo que digas me mantendre firme en mi decision"/>
+			<item value="hecha"/>
+			<item value="hechale"/>
+			<item value="AYUDA"/>
+			<item value="Ya sea una botella de alcohol, o un ramo de flores, el final es donde parti..."/>
+			<item value="Mirando de cerca el cuerpo, parece que sufrio graves quemaduras... y tiene un raro grafo con forma de estrella en pecho!!!"/>
+			<item value="cuadro"/>
+			<item value="listos!!! "/>
+			<item value="Si capitan estamos listos!!! "/>
+			<item value="Has raspado la piedra y salen chispass..te pensas que un chuchillo sirve para sacar una piedra?? ... iluso..."/>
+			<item value="Mmmmm... delicioso."/>
+			<item value="Olala!! esto es carne asada... no conocia este placer de los dioses..."/>
+			<item value="Aqui yacen todos los muertos que han intentado"/>
+			<item value="open"/>
+			<item value="observe"/>
 		</list>
 		<list key="replacehistory">
+			<item value="Si, capitan! Estamos listos!!!"/>
+			<item value="Has raspado la piedra y salen chispass... Te piensas que un chuchillo realmente podria servir?? ... Iluso..."/>
+			<item value="Mmmmm... Delicioso."/>
+			<item value="Olala!! Esto es carne asada... No conocia este placer de los dioses..."/>
+			<item value="addTextToTextArea("/>
 			<item value=""/>
 			<item value="obstacles"/>
 			<item value="barras.getCantidadDeElementos()"/>
