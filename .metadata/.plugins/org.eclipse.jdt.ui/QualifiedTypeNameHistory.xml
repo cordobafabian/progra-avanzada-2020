@@ -1,9 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="chat.ServidorVentana"/>
-<fullyQualifiedTypeName name="java.net.Socket"/>
-<fullyQualifiedTypeName name="java.awt.TextField"/>
-<fullyQualifiedTypeName name="java.io.DataInputStream"/>
 <fullyQualifiedTypeName name="java.io.DataOutputStream"/>
 <fullyQualifiedTypeName name="chat.VentanaChat"/>
 <fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbAttack"/>
@@ -12,12 +8,10 @@
 <fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbDrink"/>
 <fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbOpen"/>
 <fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbLeave"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
 <fullyQualifiedTypeName name="casasDeRegalo.Local"/>
 <fullyQualifiedTypeName name="casasDeRegalo.CadenaDeLocales"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="LectorMaterias"/>
-<fullyQualifiedTypeName name="java.util.List"/>
 <fullyQualifiedTypeName name="ComparatorMateriaGradosDescendentes"/>
 <fullyQualifiedTypeName name="GrafoListaAdyacencia"/>
 <fullyQualifiedTypeName name="java.util.HashMap"/>
@@ -54,10 +48,16 @@
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="ComparatorPoderAscendente"/>
 <fullyQualifiedTypeName name="java.util.Scanner"/>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="Contrincante"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="LectorDeArchivo"/>
+<fullyQualifiedTypeName name="java.lang.Character"/>
+<fullyQualifiedTypeName name="robotito.Direccion"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="robotito.Robotito"/>
+<fullyQualifiedTypeName name="general.Estrategia"/>
+<fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>
