@@ -1,14 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.DataOutputStream"/>
-<fullyQualifiedTypeName name="chat.VentanaChat"/>
-<fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbAttack"/>
-<fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbRead"/>
-<fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbEat"/>
-<fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbDrink"/>
-<fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbOpen"/>
-<fullyQualifiedTypeName name="traductor_de_comandos.TranslatorVerbLeave"/>
-<fullyQualifiedTypeName name="casasDeRegalo.Local"/>
 <fullyQualifiedTypeName name="casasDeRegalo.CadenaDeLocales"/>
 <fullyQualifiedTypeName name="java.lang.reflect.Array"/>
 <fullyQualifiedTypeName name="LectorMaterias"/>
@@ -29,7 +20,6 @@
 <fullyQualifiedTypeName name="juego_de_aventura.GraphicalUserInterface"/>
 <fullyQualifiedTypeName name="game_frontend.Normalizador"/>
 <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
-<fullyQualifiedTypeName name="java.lang.System"/>
 <fullyQualifiedTypeName name="javax.swing.JFrame"/>
 <fullyQualifiedTypeName name="javax.swing.ImageIcon"/>
 <fullyQualifiedTypeName name="javax.swing.JPanel"/>
@@ -47,17 +37,27 @@
 <fullyQualifiedTypeName name="traductor_de_comandos.TranslatorGive"/>
 <fullyQualifiedTypeName name="java.util.Comparator"/>
 <fullyQualifiedTypeName name="ComparatorPoderAscendente"/>
-<fullyQualifiedTypeName name="java.util.Scanner"/>
 <fullyQualifiedTypeName name="Contrincante"/>
 <fullyQualifiedTypeName name="java.util.Iterator"/>
-<fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.util.TreeMap"/>
 <fullyQualifiedTypeName name="LectorDeArchivo"/>
 <fullyQualifiedTypeName name="java.lang.Character"/>
 <fullyQualifiedTypeName name="robotito.Direccion"/>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="java.io.FileReader"/>
 <fullyQualifiedTypeName name="robotito.Robotito"/>
 <fullyQualifiedTypeName name="general.Estrategia"/>
+<fullyQualifiedTypeName name="monticulo.Elemento"/>
+<fullyQualifiedTypeName name="persona.Perro"/>
+<fullyQualifiedTypeName name="lectores.LectorDeArchivo"/>
+<fullyQualifiedTypeName name="persona.Pelaje"/>
+<fullyQualifiedTypeName name="triangulo.Triangulo"/>
+<fullyQualifiedTypeName name="java.lang.System"/>
+<fullyQualifiedTypeName name="java.nio.file.Files"/>
 <fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.nio.file.Paths"/>
+<fullyQualifiedTypeName name="mccabe.CCMcCabe"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.FileReader"/>
+<fullyQualifiedTypeName name="java.util.Scanner"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
 </qualifiedTypeNameHistroy>

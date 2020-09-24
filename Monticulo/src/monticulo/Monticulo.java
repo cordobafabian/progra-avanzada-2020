@@ -15,20 +15,19 @@ public class Monticulo {
 	}
 	
 	public void agregarUnElemento(Elemento elemento) {
-		ArrayList<Elemento> array = this.getElementos();
 		
-		if(array.size() == 1) {
-			array.add(elemento);
+		if(elementos.size() == 1) {
+			elementos.add(elemento);
 		}
 		else {
 			
-			array.add(elemento);
-			 int indexActual = array.size() - 1;
+			elementos.add(elemento);
+			 int indexActual = elementos.size() - 1;
 			 int indexPadre = indexActual / 2;
 			 
-			 while(indexPadre > 0 && (array.get(indexActual).compareTo(array.get(indexPadre)))<0){
+			 while(indexPadre > 0 && (elementos.get(indexActual).compareTo(elementos.get(indexPadre)))<0){
 				 
-				 array.get(indexActual).intercambiar(array.get(indexPadre));
+				 elementos.get(indexActual).intercambiar(elementos.get(indexPadre));
 				 indexActual = indexPadre;
 				 indexPadre = indexActual/2;
 				 
@@ -40,48 +39,47 @@ public class Monticulo {
 	
 	
 	public Elemento sacarUnElemento() {
-		ArrayList<Elemento> array = this.getElementos();
 		Elemento resultado;
 
-		if (array.size() == 1) {
+		if (elementos.size() == 1) {
 			resultado = null;
 
 		} else {
-			if (array.size() == 2) {
-				resultado = array.get(1).clone();
-				array.remove(1);
+			if (elementos.size() == 2) {
+				resultado = elementos.get(1).clone();
+				elementos.remove(1);
 
 			} else {
-				resultado = array.get(1).clone();
+				resultado = elementos.get(1).clone();
 				
-				array.get(1).intercambiar(array.get(array.size()-1));
+				elementos.get(1).intercambiar(elementos.get(elementos.size()-1));
 				//array.set(1, array.get(array.size() - 1));
-				array.remove(array.size() - 1);
+				elementos.remove(elementos.size() - 1);
 
 				int indexActual = 1;
-				int indexHI = indexActual * 2 > array.size() - 1 ? -1 : indexActual * 2;
-				int indexHD = indexActual * 2 + 1 > array.size() - 1 ? -1 : indexActual * 2 + 1;
+				int indexHI = indexActual * 2 >= elementos.size() - 1 ? -1 : indexActual * 2;
+				int indexHD = indexActual * 2 + 1 >= elementos.size() - 1 ? -1 : indexActual * 2 + 1;
 				
 
-				while ((indexHI != -1 && array.get(indexActual).compareTo(array.get(indexHI)) > 0)
-						|| (indexHD != -1 && array.get(indexActual).compareTo(array.get(indexHD)) > 0)) {
+				while ((indexHI != -1 && elementos.get(indexActual).compareTo(elementos.get(indexHI)) > 0)
+						|| (indexHD != -1 && elementos.get(indexActual).compareTo(elementos.get(indexHD)) > 0)) {
 					
 					if (indexHD != -1) {
-						if (array.get(indexHI).compareTo(array.get(indexHD)) > 0) {
-							array.get(indexActual).intercambiar(array.get(indexHD));
+						if (elementos.get(indexHI).compareTo(elementos.get(indexHD)) > 0) {
+							elementos.get(indexActual).intercambiar(elementos.get(indexHD));
 							indexActual = indexHD;
 						} else {
-							array.get(indexActual).intercambiar(array.get(indexHI));
+							elementos.get(indexActual).intercambiar(elementos.get(indexHI));
 							indexActual = indexHI;
 
 						}
 					} else {
-						array.get(indexActual).intercambiar(array.get(indexHI));
+						elementos.get(indexActual).intercambiar(elementos.get(indexHI));
 						indexActual = indexHI;
 					}
 
-					indexHI = indexActual * 2 >= array.size() - 1 ? -1 : indexActual * 2;
-					indexHD = indexActual * 2 + 1 >= array.size() - 1 ? -1 : indexActual * 2 + 1;
+					indexHI = indexActual * 2 >= elementos.size() - 1 ? -1 : indexActual * 2;
+					indexHD = indexActual * 2 + 1 >= elementos.size() - 1 ? -1 : indexActual * 2 + 1;
 
 				} // FIN WHILE
 			} // FIN DE ELSE INTERNO

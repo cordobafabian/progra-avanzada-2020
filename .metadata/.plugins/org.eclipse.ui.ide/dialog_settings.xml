@@ -6,6 +6,8 @@
 		<item key="SmartImportRootWizardPage.STORE_NESTED_PROJECTS" value="false"/>
 		<item key="SmartImportRootWizardPage.STORE_CONFIGURE_NATURES" value="true"/>
 		<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+			<item value="C:\Users\Noblex\Desktop\eclipse\PilaYCola"/>
+			<item value="C:\Users\Noblex\Desktop\eclipse\Monticulo"/>
 			<item value="C:\Users\Noblex\Desktop\eclipse\VisualizadorDeOrdenamientos"/>
 			<item value="C:\Users\Noblex\Desktop\Repositorios\EclipsadosSortGraphics"/>
 			<item value="C:\Users\Noblex\Desktop\Repositorios\Chateanding"/>

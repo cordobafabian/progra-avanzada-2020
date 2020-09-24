@@ -45,6 +45,44 @@ public class Elemento{
 		o.setPrioridad(aux.getPrioridad());
 	}
 	
+	public int obtenerPosPico(int[] arreglo){
+		int i = 0;
+		int posPico = -1;
+		
+		while(i+1 < arreglo.length && posPico==-1){
+			if(arreglo[i+1] < arreglo[i]) {
+				posPico = i;
+			}
+		i++;
+		}
+		
+	return posPico;
+	}
+	
+	public int obtenerPosPicoB(int[] arreglo) {
+		return obtenerPosPicoB(arreglo, 0, (arreglo.length -1)/2, arreglo.length - 1);
+	}
+	
+	public int obtenerPosPicoB(int[] arreglo, int inferior,int medio, int superior){
+	int posPico = -1;
+	
+	if(arreglo[medio] > arreglo[medio + 1]) {
+		posPico = medio;
+	
+	}else {
+		if(arreglo[medio-1] < arreglo[medio + 1]) {
+			posPico = obtenerPosPicoB(arreglo, medio +1, (medio+1+superior)/2, superior);
+		}
+		else {
+			posPico = obtenerPosPicoB(arreglo, inferior, (inferior + medio)/2, medio);
+		}
+	}
+	
+	return posPico;
+	
+	}
+	
+
 	@Override
 	public String toString() {
 		return Integer.toString(this.prioridad) +" "+ this.nombre;  
@@ -78,5 +116,12 @@ public class Elemento{
 		return true;
 	}
 	
+	public static void main(String[] args) {
+		int[] arreglo = {1,2,3,4,5,7,6,5,4,3,2,1,0,-1,-3,-5,-7};
+		Elemento ele = new Elemento();
+		int pico = ele.obtenerPosPico(arreglo);
+
+		System.out.println(pico);
+	}
 
 }
